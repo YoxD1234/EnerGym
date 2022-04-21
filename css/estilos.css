@@ -4,46 +4,56 @@
     box-sizing: border-box;
     font-family: 'Montserrat Alternates', sans-serif;
 }
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
 .container{
-    display: grid;
-    grid-template-columns: 20% 80%;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../imagenes/fondo.jpg);
+    background-size: cover;
 }
 .navegacion{
-    padding-left: 30px;
-    min-width: 100%;
-    min-height: 100vh;
-    background-color: rgb(73, 69, 69);
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(151, 166, 160,30%);
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-bottom: 30px;
 }
 .navegacion .logo{
+    width: 30%;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
+    color:#0CF25D;
 }
 .navegacion .options{
+    width: 70%;
+    gap: 55px;
     display: flex;
-    flex-direction: column;
-    align-items: left;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    gap: 70px;
-    color: rgb(185, 225, 252);
+    color: #DBF227;
     font-weight: bolder;
 }
-.navegacion .options h2{
+.navegacion .options h3{
     cursor: pointer;
 }
 .navegacion img{
-    width: 90px;
+    width: 70px;
 }
 .principal {
-    min-width: 100%;
-    min-height: 100vh;
-    background-color: aliceblue;
+    width: 100vw;
+    height: 90vh;
+    background-color: #E4F2E7;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 0;
+    margin: 0;
 }

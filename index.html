@@ -13,119 +13,28 @@
 </head>
 <body>
     <div class="container">
-
         <nav class="navegacion">
             <div class="logo">
                 <img src="./imagenes/logo.png">
                 <h1>EnerGym</h1>
             </div>
-
             <div class="options">
-                <h2 id="btnCargarHome">Home</h2>
-                <h2 id="btnCargarRegistro">Registro</h2>
-                <h2 id="btnCargarSesion">Iniciar Sesión</h2>
-                <h2 id="btnCargarTienda">Tienda</h2>
-                <h2 id="btnCargarTalleres">Talleres Gratis</h2>
+                <h3 id="btnCargarHome">Home</h3>
+                <h3 id="btnCargarRegistro">Registro</h3>
+                <h3 id="btnCargarSesion">Iniciar Sesión</h3>
+                <h3 id="btnCargarTienda">Tienda</h3>
+                <h3 id="btnCargarTalleres">Talleres Gratis</h3>
             </div>
 
         </nav>
         <div class="principal" id="principal">
-            <h1>Home</h1>
-        </div>
+            
+        </div> 
     </div>
+</body>
+    
 <!---------------------------------JAVASCRIPT------------------------------------->
-    <script type="text/javascript">
-/********************************HOME*********************************/
-$('#btnCargarHome').click(function(){
-            var esperar = 0;
-            $.ajax({
-
-                url: "home.html",
-                beforeSend: function(){
-                    $('#principal').text('Cargando...');
-                },
-                success: function(data){
-                    setTimeout(function(){
-                        $('#principal').html(data);
-                    }
-                    );
-                }
-
-            });
-        });
-
-/********************************REGISTRO*********************************/
-        $('#btnCargarRegistro').click(function(){
-            var esperar = 0;
-            $.ajax({
-
-                url: "registro.html",
-                beforeSend: function(){
-                    $('#principal').text('Cargando...');
-                },
-                success: function(data){
-                    setTimeout(function(){
-                        $('#principal').html(data);
-                    }
-                    );
-                }
-
-            });
-        });
-/********************************Iniciar Sesion********************************/
-        $('#btnCargarSesion').click(function(){
-            var esperar = 0;
-            $.ajax({
-
-                url: "sesion.html",
-                beforeSend: function(){
-                    $('#principal').text('Cargando...');
-                },
-                success: function(data){
-                    setTimeout(function(){
-                        $('#principal').html(data);
-                    }, esperar
-                    );
-                }
-
-            });
-        });
-/********************************Tienda********************************/
-        $('#btnCargarTienda').click(function(){
-            var esperar = 0;
-            $.ajax({
-
-                url: "tienda.html",
-                beforeSend: function(){
-                    $('#principal').text('Cargando...');
-                },
-                success: function(data){
-                    setTimeout(function(){
-                        $('#principal').html(data);
-                    }, esperar
-                    );
-                }
-
-            });
-        });
-/********************************Talleres********************************/
-        $('#btnCargarTalleres').click(function(){
-            var esperar = 0;
-            $.ajax({
-
-                url: "talleres.html",
-                beforeSend: function(){
-                    $('#principal').text('Cargando...');
-                },
-                success: function(data){
-                    setTimeout(function(){
-                        $('#principal').html(data);
-                    }, esperar
-                    );
-                }
-
-            });
-        });
+    <script src="./js/script.js">
 
     </script>
 </body>
