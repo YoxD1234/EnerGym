@@ -10,9 +10,9 @@ body{
 }
 
 .container{
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../imagenes/fondo.jpg);
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagenes/black-texture.jpg);
     background-size: cover;
 }
 .navegacion{
@@ -21,7 +21,7 @@ body{
     border: 0px;
     height: 10vh;
     width: 100%;
-    background-color: rgb(151, 166, 160,30%);
+    background-color: none;
     display: flex;
 }
 .navegacion .logo{
@@ -29,7 +29,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    color:#0CF25D;
+    color:white;
+}
+.logo span{
+    color: #DBF227;
 }
 .navegacion .options{
     width: 70%;
@@ -38,7 +41,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    color: #DBF227;
+    color: white;
     font-weight: bolder;
 }
 .navegacion .options h3{

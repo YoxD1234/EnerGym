@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600&display=swap');
+body{
+   width: 100vw;
+   height: 100vh;
+}
+.principal{
+     background: none;
+ }
+ .container-home{
+     width: 100vw;
+     height: 100%;
+     box-sizing: border-box;
+ }
+ .primer-home{
+   margin: 0;
+   top: 0%;
+   width: 100vw;
+   height: 100%;
+
+ }
+ .primeros-textos{
+     display: grid;
+     grid-template-columns: 50% 50%;
+     height: 100%;
+ }
+ .uno-primer-home, .dos-primer-home{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     color: white;
+ }
+.uno-primer-home{
+   background: url(../imagenes/ruedabackground.png);
+   background-position: center;
+   background-size: 100% 100%;
+}
+ .uno-primer-home div{
+    padding: 20px;
+ }
+ .uno-primer-home div img{
+     width: 100%;
+    border-radius: 100%;
+ }
+ .dos-primer-home{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+ }
+ .dos-primer-home div{
+    padding: 10px;
+ }
+ .dos-primer-home h3{
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    font-size: 38px;
+ }
+ .dos-primer-home h4{
+    font-family: 'Roboto Mono', monospace;
+    color: #DBF227;
+    font-size: 32px;
+ }
+ .dos-primer-home button{
+    background-color: #0c5799;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-weight: bolder;
+    font-size: 18px;
+    box-shadow: 0px 0px 40px 0px rgb(54, 90, 253);
+    cursor: pointer;
+ }
+ .dos-primer-home button:hover{
+   background-color: white;
+   color: black;
+   box-shadow: 0px 0px 40px 0px rgb(54, 90, 253);
+}
+ .segundo-home{
+    width: 100%;
+    height: 100vh;
+    background:url(../imagenes/fondo-2-home.jpg);
+
+ }
